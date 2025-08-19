@@ -1,0 +1,20 @@
+[
+    {
+        "bookid": 1,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Fiction"
+    },
+    {
+        "bookid": 2,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction"
+    },
+    {
+        "bookid": 3,
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Fiction"
+    }
+]

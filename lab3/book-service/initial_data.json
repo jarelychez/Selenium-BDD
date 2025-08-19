@@ -1,0 +1,17 @@
+[
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Fiction"
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction"
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Fiction"
+    }
+]

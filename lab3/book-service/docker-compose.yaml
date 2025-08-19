@@ -1,0 +1,31 @@
+version: '3.9'
+# Flask and Mongo Images
+# flas is built locally
+# mongo is pulled from hub.docker.com
+services:
+  api:
+    build:
+      context: .
+      # Disable cache to ensure the latest files are always used
+      args:
+        - --no-cache
+    ports:
+      #- "5005:5005"
+      - "${FLASK_PORT:-5005}:5005"
+    environment:
+      - FLASK_DEBUG=1
+      - FLASK_HOST=0.0.0.0
+      - FLASK_PORT=${FLASK_PORT:-5005}
+      - MONGO_URI=mongodb://mongo:27017/books_db
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
