@@ -1,0 +1,20 @@
+plugins {
+id 'java'
+}
+repositories {
+mavenCentral()
+}
+dependencies {
+// Selenium WebDriver
+testImplementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
+// Selenium Chrome Driver
+testImplementation 'org.seleniumhq.selenium:selenium-chrome-driver:4.21.0'
+// Cucumber
+testImplementation 'io.cucumber:cucumber-java:6.10.4'
+testImplementation 'io.cucumber:cucumber-junit:6.10.4'
+// JUnit
+testImplementation 'junit:junit:4.13.2'
+}
+test {
+useJUnit()
+}
